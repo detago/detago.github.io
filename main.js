@@ -14,8 +14,8 @@ let lowPropChallanges =
         'Play a round of foosball (Tischkicker)',
         'Play a round of beer pong',
         'Start a conversation with a random fact',
-        'Teach or learn the dance "Bachata"',
         'Wear the red hat until someone else takes it',
+        'Teach or learn the dance "Bachata"',
 
         'Challange the person in the red hat to sth and win',
         'Make the person in the red hat a compliment',
@@ -28,18 +28,28 @@ let lowPropChallanges =
         'Sing along to a song. (You may request a song at the bar)',
     ];
 
+
 var counter = 0;
+var lastRandomChallange = "";
 
 btn.addEventListener('click', function () {
-    var selectChallangeType = Math.floor(Math.random()*2);
+    selectChallangeType = Math.floor(Math.random()*2);
 
     if (selectChallangeType == 0) {
-        var randomChallange = highPropChallanges[Math.floor(Math.random() * highPropChallanges.length)]
+        randomChallange = highPropChallanges[Math.floor(Math.random() * highPropChallanges.length)];
+        if (lastRandomChallange == randomChallange) {
+            randomChallange = lowPropChallanges[Math.floor(Math.random() * lowPropChallanges.length)];
+        }
     } else {
-        var randomChallange = lowPropChallanges[Math.floor(Math.random() * lowPropChallanges.length)]
+        randomChallange = lowPropChallanges[Math.floor(Math.random() * lowPropChallanges.length)];
+        if (lastRandomChallange == randomChallange) {
+            randomChallange = highPropChallanges[Math.floor(Math.random() * highPropChallanges.length)];
+        }
     }
-        
+
+
     output.innerHTML = randomChallange;
+    lastRandomChallange = randomChallange;
     counter += 1;
     document.getElementById("counter").innerHTML = counter;
 })
