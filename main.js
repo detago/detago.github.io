@@ -7,7 +7,11 @@ let challange =
         'Challange 3',
     ];
 
+var counter = 0;
+
 btn.addEventListener('click', function(){
     var randomChallange = challange[Math.floor(Math.random() * challange.length)]
     output.innerHTML = randomChallange;
+    counter += 1;
+    document.getElementById("counter").innerHTML = counter;
 })
