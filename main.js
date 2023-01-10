@@ -22,7 +22,6 @@ let lowPropChallanges =
 
         'Use the funnel (Trichter)',
         'Exchange one article of clothing with someone',
-        'Do not use the letter E for 2 minutes',
         'Make Lars a complement :)',
         'Have a non-alcoholic drink',
         'Sing along to a song. (You may request a song at the bar)',
