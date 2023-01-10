@@ -13,9 +13,9 @@ let lowPropChallanges =
     [
         'Play a round of foosball (Tischkicker)',
         'Play a round of beer pong',
-        'Start a conversation with "never have I ever ..."',
-        'Wear the red hat until someone else takes it',
+        'Start a conversation with a random fact',
         'Teach or learn the dance "Bachata"',
+        'Wear the red hat until someone else takes it',
 
         'Challange the person in the red hat to sth and win',
         'Make the person in the red hat a compliment',
