@@ -11,20 +11,24 @@ let highPropChallanges =
 
 let lowPropChallanges =
     [
+        'Make yourself a longdrink',
+        'Make someone else a longdrink',
         'Play a round of foosball (Tischkicker)',
         'Play a round of beer pong',
-        'Start a conversation with a random fact',
+        'Make Lars a complement :)',
+        'Convince someone to drink a shot',
         'Wear the red hat until someone else takes it',
-        'Teach or learn the dance "Bachata"',
 
         'Challange the person in the red hat to sth and win',
         'Make the person in the red hat a compliment',
 
         'Use the funnel (Trichter)',
         'Exchange one article of clothing with someone',
-        'Make Lars a complement :)',
+        'Do not use the letter E for 2 minutes',
         'Have a non-alcoholic drink',
         'Sing along to a song. (You may request a song at the bar)',
+        'Start a conversation with a random fact',
+        'Teach or learn the dance "Bachata"',
     ];
 
 
