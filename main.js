@@ -8,14 +8,14 @@ let highPropChallanges =
         'Drink a shot with someone you do not know',
         'Play a round of rage cage',
         'Teach someone your best dance move',
+        'Take a selfie with someone you do not know',
     ];
 
 let lowPropChallanges =
     [
         'Mix someone a longdrink',
         'Convince 2 others to use the dancefloor with you until the end of the song',
-        'Take a selfie with someone you do not know',
-        'Drink a shot wiht someone you know',
+        'Drink a shot with someone you know',
         'Your next drink is the same as the person on your left is drinking right now',
         'Mix yourself a longdrink',
         'Play a round of foosball (Tischkicker)',
@@ -24,7 +24,6 @@ let lowPropChallanges =
         'Play a round of beer pong',
         'Use the funnel (Trichter)',
         'Exchange one article of clothing with someone',
-        'Do not use the letter E for 2 minutes',
         'Have a non-alcoholic drink',
         'Sing along to a song with someone. (You may request a song at the bar)',
         'Start a conversation with a random fact',
