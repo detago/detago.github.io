@@ -4,21 +4,23 @@ let output = document.getElementById('output');
 let highPropChallanges =
     [
         'Drink a shot with someone you do not know',
-        'Play a round of ragecage',
+        'Play a round of rage cage',
         'Take a selfie with someone you do not know',
-        'Use the dancefloor until the end of the current song',
+        'Convince 2 others to use the dancefloor with you',
+        'Teach someone your best dance move',
     ];
 
 let lowPropChallanges =
     [
+        'Your next drink is the same as the person on your left is drinking right now',
         'Make yourself a longdrink',
         'Make someone else a longdrink',
         'Play a round of foosball (Tischkicker)',
-        'Play a round of beer pong',
         'Make Lars a complement :)',
         'Convince someone to drink a shot',
-        'Wear the red hat until someone else takes it',
 
+        'Play a round of beer pong',
+        'Wear the red hat until someone else takes it',
         'Challange the person in the red hat to sth and win',
         'Make the person in the red hat a compliment',
 
@@ -28,7 +30,6 @@ let lowPropChallanges =
         'Have a non-alcoholic drink',
         'Sing along to a song. (You may request a song at the bar)',
         'Start a conversation with a random fact',
-        'Teach or learn the dance "Bachata"',
     ];
 
 
