@@ -26,7 +26,7 @@ let lowPropChallanges =
         'Exchange one article of clothing with someone',
         'Do not use the letter E for 2 minutes',
         'Have a non-alcoholic drink',
-        'Sing along to a song. (You may request a song at the bar)',
+        'Sing along to a song with someone. (You may request a song at the bar)',
         'Start a conversation with a random fact',
         'Tell a really bad joke',
     ];
