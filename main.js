@@ -31,7 +31,8 @@ let lowPropChallanges =
     ];
 
 
-var counter = 0;
+var _counter = parseInt(localStorage.getItem("Cs"));
+document.getElementById("counter").innerHTML = _counter;
 var lastRandomChallange = "";
 
 btn.addEventListener('click', function () {
@@ -52,6 +53,15 @@ btn.addEventListener('click', function () {
 
     output.innerHTML = randomChallange;
     lastRandomChallange = randomChallange;
-    counter += 1;
-    document.getElementById("counter").innerHTML = counter;
+    _counter += 1;
+    document.getElementById("counter").innerHTML = _counter;
+    localStorage.setItem('Cs', _counter);
+})
+
+rst.addEventListener('click', function () {
+    output.innerHTML = "Press the button to get a new challange";
+
+    _counter = 0;
+    document.getElementById("counter").innerHTML = _counter;
+    localStorage.setItem('Cs', _counter);
 })
