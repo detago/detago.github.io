@@ -1,5 +1,6 @@
 ﻿let btn = document.getElementById('btn');
 let output = document.getElementById('output');
+let rst = document.getElementById('rst');
 
 let highPropChallanges =
     [
