@@ -32,7 +32,7 @@ let lowPropChallanges =
     ];
 
 
-var _counter = parseInt(localStorage.getItem("Cs"));
+var _counter = parseInt(localStorage.getItem("Cs")) || 0;
 document.getElementById("counter").innerHTML = _counter;
 var lastRandomChallange = "";
 
