@@ -2,7 +2,7 @@
 let output = document.getElementById('output');
 let rst = document.getElementById('rst');
 
-let highPropChallanges =
+let highPropChallenges =
     [
         'Let someone choose a shot you drink',
         'Let someone mix you a longdrink',
@@ -12,7 +12,7 @@ let highPropChallanges =
         'Take a selfie with someone you do not know',
     ];
 
-let lowPropChallanges =
+let lowPropChallenges =
     [
         'Mix someone a longdrink',
         'Convince 2 others to use the dancefloor with you until the end of the song',
@@ -34,33 +34,33 @@ let lowPropChallanges =
 
 var _counter = parseInt(localStorage.getItem("Cs")) || 0;
 document.getElementById("counter").innerHTML = _counter;
-var lastRandomChallange = "";
+var lastRandomChallenge = "";
 
 btn.addEventListener('click', function () {
-    selectChallangeType = Math.floor(Math.random()*2);
+    selectChallengeType = Math.floor(Math.random()*2);
 
-    if (selectChallangeType == 0) {
-        randomChallange = highPropChallanges[Math.floor(Math.random() * highPropChallanges.length)];
-        if (lastRandomChallange == randomChallange) {
-            randomChallange = lowPropChallanges[Math.floor(Math.random() * lowPropChallanges.length)];
+    if (selectChallengeType == 0) {
+        randomChallenge = highPropChallenges[Math.floor(Math.random() * highPropChallenges.length)];
+        if (lastRandomChallenge == randomChallenge) {
+            randomChallenge = lowPropChallenges[Math.floor(Math.random() * lowPropChallenges.length)];
         }
     } else {
-        randomChallange = lowPropChallanges[Math.floor(Math.random() * lowPropChallanges.length)];
-        if (lastRandomChallange == randomChallange) {
-            randomChallange = highPropChallanges[Math.floor(Math.random() * highPropChallanges.length)];
+        randomChallenge = lowPropChallenges[Math.floor(Math.random() * lowPropChallenges.length)];
+        if (lastRandomChallenge == randomChallenge) {
+            randomChallenge = highPropChallenges[Math.floor(Math.random() * highPropChallenges.length)];
         }
     }
 
 
-    output.innerHTML = randomChallange;
-    lastRandomChallange = randomChallange;
+    output.innerHTML = randomChallenge;
+    lastRandomChallenge = randomChallenge;
     _counter += 1;
     document.getElementById("counter").innerHTML = _counter;
     localStorage.setItem('Cs', _counter);
 })
 
 rst.addEventListener('click', function () {
-    output.innerHTML = "Press the button to get a new challange";
+    output.innerHTML = "Press the button to get a new challenge";
 
     _counter = 0;
     document.getElementById("counter").innerHTML = _counter;
