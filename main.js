@@ -7,7 +7,6 @@ let highPropChallenges =
         // Paulinas Bday
         'Take a photo with someone',
         'Give someone a compliment',
-        'Make Lars a compliment',        
         'Play Rock Paper Scissors with someone',
         'Be silent for 2 min',
         'Tell someone a joke',
@@ -53,6 +52,7 @@ let lowPropChallenges =
         'Try to sell something to someone or do a trade',
         'Drink from the funnel',
         'Down your drink',
+        'Make Lars a compliment',        
         
         //Lars Bday
         /*
