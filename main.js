@@ -80,10 +80,9 @@ document.getElementById("counter").innerHTML = _counter;
 var lastRandomChallenge = "";
 
 btn.addEventListener('click', function () {
-    //Changed from 2 to 1.01 for Paulinas Bday
-    selectChallengeType = Math.floor(Math.random()*1.01);
+    selectChallengeType = Math.floor(Math.random()*100);
 
-    if (selectChallengeType == 0) {
+    if (selectChallengeType > 1) {
         randomChallenge = highPropChallenges[Math.floor(Math.random() * highPropChallenges.length)];
         if (lastRandomChallenge == randomChallenge) {
             randomChallenge = lowPropChallenges[Math.floor(Math.random() * lowPropChallenges.length)];
