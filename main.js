@@ -52,7 +52,7 @@ let lowPropChallenges =
         'Try to sell something to someone or do a trade',
         'Drink from the funnel',
         'Down your drink',
-        'Make Lars a compliment',        
+        'Make Lars a compliment :)',        
         
         //Lars Bday
         /*
