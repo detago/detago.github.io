@@ -68,12 +68,6 @@ let highPropChallenges =
         'Sing along to a song with someone (you can request a song at the bar)',
         'Start a conversation with someone you do not know (or know least)',
         'Say something weird/completely out of context to someone and walk away',
-        'Take a photo with a person who has more than 5 diopters',
-        'Act out like a meme',
-        'Start a survey with 10 people on any topic (e.g., favorite Disney movie, cats or dogs, socks with sandals okay or not)',
-        'Discover the hidden talent of two strangers',
-        'Move backwards for 2 minutes straight',
-        'Confess romantic feelings to a stranger, optionally propose marriage and get on one knee (extremely emotional and heart-wrenching)'
 
     ];
 
@@ -107,6 +101,12 @@ let lowPropChallenges =
         */
 
         'Make Lars a compliment :)',
+        'Take a photo with a person who has more than 5 diopters',
+        'Act out like a meme',
+        'Start a survey with 10 people on any topic (e.g., favorite Disney movie, cats or dogs, socks with sandals okay or not)',
+        'Discover the hidden talent of two strangers',
+        'Move backwards for 2 minutes straight',
+        'Confess romantic feelings to a stranger, optionally propose marriage and get on one knee (extremely emotional and heart-wrenching)'
     ];
 
 
