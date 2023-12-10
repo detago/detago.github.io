@@ -5,6 +5,7 @@ let rst = document.getElementById('rst');
 let highPropChallenges =
     [
         // Paulinas Bday
+        /*
         'Take a photo with someone',
         'Give someone a compliment',
         'Play Rock Paper Scissors with someone',
@@ -34,7 +35,8 @@ let highPropChallenges =
         'Ask Paulina for the camera and take some photos ',
         'Start a conversation with someone you do not know (or know least)',
         'Say something weird/completely out of context to someone and walk away ',
-        
+        */
+
         //Lars Bday
         /*
         'Let someone choose a shot you drink',
@@ -44,15 +46,46 @@ let highPropChallenges =
         'Teach someone your best dance move',
         'Take a selfie with someone you do not know',
         */
+
+        // ESN Glühwein
+        'Try to sell something to someone or do a trade',
+        'Teach someone your best dance move',
+        'Take a selfie with someone you do not know',
+        'Convince 2 others to use the dance floor with you until the end of the song',
+        'Play a round of foosball (Tischkicker)',
+        'Exchange one article of clothing with someone',
+        'Start a conversation with a random fact',
+        'Tell a really bad joke',
+        'Take a photo with someone',
+        'Give someone a compliment',
+        'Play Rock Paper Scissors with someone',
+        'Tell someone a joke',
+        'Tell someone a fun fact',
+        'Next time someone tries to talk to you bark at them',
+        'Yell out the first thing that comes to your mind',
+        'Wear your shirt backwards/inside out for a few minutes',
+        'Use a pickup line on someone',
+        'Sing along to a song with someone (you can request a song at the bar)',
+        'Start a conversation with someone you do not know (or know least)',
+        'Say something weird/completely out of context to someone and walk away',
+        'Take a photo with a person who has more than 5 diopters',
+        'Act out like a meme',
+        'Start a survey with 10 people on any topic (e.g., favorite Disney movie, cats or dogs, socks with sandals okay or not)',
+        'Discover the hidden talent of two strangers',
+        'Move backwards for 2 minutes straight',
+        'Confess romantic feelings to a stranger, optionally propose marriage and get on one knee (extremely emotional and heart-wrenching)'
+
     ];
 
 let lowPropChallenges =
     [
         //Paulinas Bday
+        /*
         'Try to sell something to someone or do a trade',
         'Drink from the funnel',
         'Down your drink',
-        'Make Lars a compliment :)',        
+        'Make Lars a compliment :)',     
+        */
         
         //Lars Bday
         /*
@@ -72,6 +105,8 @@ let lowPropChallenges =
         'Start a conversation with a random fact',
         'Tell a really bad joke',
         */
+
+        'Make Lars a compliment :)',
     ];
 
 
