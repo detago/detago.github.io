@@ -1,1 +1,4 @@
 File -> open -> Website -> "WebSite"
+
+zum speichern:
+localhost ordner aufrufen C:\Users\Taste\OneDrive\Dokumente\My Web Sites\WebSite und Datein in Git repo kopieren
