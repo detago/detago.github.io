@@ -10,7 +10,7 @@ let highPropChallanges =
         'Play a round of rage cage',
         'Teach someone your best dance move',
         'Take a selfie with someone you do not know',
-    ];
+    ]; 
 
 let lowPropChallanges =
     [
