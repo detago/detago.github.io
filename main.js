@@ -138,7 +138,9 @@ btn.addEventListener('click', function () {
 })
 
 rst.addEventListener('click', function () {
-    output.innerHTML = "Press the button to get a new challenge";
+    localStorage.clear();
+
+    output.innerHTML = "Press the button to get a new challange";
 
     _counter = 0;
     document.getElementById("counter").innerHTML = _counter;
