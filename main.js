@@ -29,15 +29,77 @@ let lowPropChallanges =
         'Sing along to a song with someone. (You may request a song at the bar)',
         'Start a conversation with a random fact',
         'Tell a really bad joke',
+        'Teach or find someone to teach you Bachata',
+        'Teach or find someone to teach you Lindyhop'
     ];
 
+let usedChallangesHighProb = [];
+let usedChallangesLowProb = [];
 
 var _counter = parseInt(localStorage.getItem("Cs")) || 0;
 document.getElementById("counter").innerHTML = _counter;
-var lastRandomChallange = "";
+// var lastRandomChallange = "";
+
+
+
+// um Liste mit noch nicht vorkommenden Elemente zu erstellen
+function findUniqueElements(list1, list2) {
+    let uniqueElements = [];
+
+    for (let i = 0; i < list1.length; i++) {
+        if (!list2.includes(list1[i]) && !uniqueElements.includes(list1[i])) {
+            uniqueElements.push(list1[i]);
+        }
+    }
+
+    for (let i = 0; i < list2.length; i++) {
+        if (!list1.includes(list2[i]) && !uniqueElements.includes(list2[i])) {
+            uniqueElements.push(list2[i]);
+        }
+    }
+
+    return uniqueElements;
+}
 
 btn.addEventListener('click', function () {
-    selectChallangeType = Math.floor(Math.random()*2);
+
+    // select a challange
+    selectChallangeType = Math.floor(Math.random() * 100);
+
+    // Highprob challanges
+    if (selectChallangeType > 30) {
+        // checks ob alle schon verwendet, wenn ja dann low prob
+        if (usedChallangesHighProb.length != highPropChallanges.length) {
+            let uniqueList = findUniqueElements(usedChallangesHighProb, highPropChallanges);
+            randomChallange = uniqueList[Math.floor(Math.random() * uniqueList.length)]
+            usedChallangesHighProb.push(randomChallange)
+        } else {
+            let uniqueList = findUniqueElements(usedChallangesLowProb, lowPropChallanges);
+            randomChallange = uniqueList[Math.floor(Math.random() * uniqueList.length)]
+            usedChallangesLowProb.push(randomChallange)
+        }
+    }
+    // low prob
+    else {
+        if (usedChallangesLowProb.length != lowPropChallanges.length) {
+            let uniqueList = findUniqueElements(usedChallangesLowProb, lowPropChallanges);
+            randomChallange = uniqueList[Math.floor(Math.random() * uniqueList.length)]
+            usedChallangesLowProb.push(randomChallange)
+        } else {
+            let uniqueList = findUniqueElements(usedChallangesHighProb, highPropChallanges);
+            randomChallange = uniqueList[Math.floor(Math.random() * uniqueList.length)]
+            usedChallangesHighProb.push(randomChallange)
+        }
+    }
+
+
+    // wenn alle Challanges durch, dann wieder reset
+    if (usedChallangesHighProb.length == highPropChallanges.length && usedChallangesLowProb.length == lowPropChallanges.length) {
+        usedChallangesHighProb = [];
+        usedChallangesLowProb = [];
+    }
+
+/*   selectChallangeType = Math.floor(Math.random()*2);
 
     if (selectChallangeType == 0) {
         randomChallange = highPropChallanges[Math.floor(Math.random() * highPropChallanges.length)];
@@ -50,19 +112,22 @@ btn.addEventListener('click', function () {
             randomChallange = highPropChallanges[Math.floor(Math.random() * highPropChallanges.length)];
         }
     }
-
+    */
 
     output.innerHTML = randomChallange;
-    lastRandomChallange = randomChallange;
-    _counter += 1;
+    // lastRandomChallange = randomChallange;
     document.getElementById("counter").innerHTML = _counter;
     localStorage.setItem('Cs', _counter);
+    _counter += 1;
 })
 
 rst.addEventListener('click', function () {
-    output.innerHTML = "Press the button to get a new challange";
-
+    output.innerHTML = "Press the button to get a new Challange";
     _counter = 0;
+
+    usedChallangesHighProb = [];
+    usedChallangesLowProb = [];
+
     document.getElementById("counter").innerHTML = _counter;
     localStorage.setItem('Cs', _counter);
 })
